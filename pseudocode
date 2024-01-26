@@ -1,0 +1,8 @@
+create dictionary
+create input variable (choice)
+create
+while loop based on continue variable
+if else regarding choice
+if add then add the student to the dictionary
+else if view then print the dictionary
+else if quit then change choice to different variable so loop discontinues
