@@ -1,8 +1,7 @@
 student_list = [{"Name": "Jeffery", "Hometown": "California", "Favorite_food": "Cheesecake"},
-                {"Name": "<NAME>", "Hometown": "" , "Favorite_food": ""},
-                {"Name": "<NAME>", "Hometown": "California", "Favorite_Food": ""}]
-userInput=input("Which option do you want to do today? (add/view/quit) ")
-userInput=userInput.lower()
+                {"Name": "Paul", "Hometown": "Orlando" , "Favorite_food": "Marzipan"},
+                {"Name": "Tom", "Hometown": "Ann Arbor", "Favorite_Food": "Lamb Curry"}]
+
 contInput="y"
 secondChoice="potato"
 def list_names(students):
@@ -17,6 +16,8 @@ def get_new_student():
     addStudent= {"Name": name,"Hometown": newHometown," Favorite_Food": newFavoriteFood}
     return addStudent
 while contInput=="y":
+    userInput = input("Which option do you want to do today? (add/view/quit) ")
+    userInput = userInput.lower()
     if userInput == "add":
         student_list.append(get_new_student())
         print(student_list[len(student_list)-1])
